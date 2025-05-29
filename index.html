@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinum</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-display bg-body relative">
+
+
+
+
+
+
+
+
+
+
+    <section id="header" class="header bg-body container mx-auto">
+        <nav id="navbar" class="container mx-auto flex flex-col md:flex-row justify-between items-center py-5">
+            <div class="logo">
+                <img src="./images/logo/Screenshot 2025-05-18 000704.png" alt="">
+            </div>
+            <div class="navbar flex flex-col md:flex-row justify-between items-center gap-15">
+                <ul>
+                    <li id="navlist" class="flex flex-col md:flex-row justify-between items-center gap-10 ">
+                        <a class="font-medium overline-hover px-2" href="#">Expertise</a>
+                        <a class="font-medium overline-hover px-2" href="#">Work</a>
+                        <a class="font-medium overline-hover px-2" href="#">About</a>
+                        <a class="font-medium overline-hover px-2" href="#">Blog</a>
+                        <a class="font-medium overline-hover px-2" href="#">Careers</a>
+                    </li>
+                </ul>
+
+                <button
+                    class="bg-button hover:bg-black hover:duration-<2000> hover:ease-linear hover:text-white py-3 px-7 rounded-full text-white">Contact
+
+                </button>
+
+
+            </div>
+
+
+
+        </nav>
+
+
+
+
+
+    </section>
+
+
+
+    <section class="container mx-auto">
+
+        <div id="three_button"
+            class="hidden  h-[50px] w-[50px] z-999 bg-white rounded-full flex justify-center items-center">
+
+            <i id="hamburger" class="fa-solid fa-bars text-[20px]"></i>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section class="navsliderSection">
+
+
+        <div id="navslider"
+            class=" bg-white hidden flex justify-center items-center p-5 fixed top-0  z-99  h-[100vh] w-full   ">
+
+            <div
+                class="navslide container mx-auto flex flex-col md:flex-row justify-between items-center w-full h-[50vh] md:h-[100vh]">
+
+
+                <div class="left-navslide w-full md:w-1/2 flex flex-col gap-5">
+
+                    <div class="logo ">
+                        <img src="./images/logo/foooter Screenshot 2025-05-18 020347.png" alt="">
+                    </div>
+
+
+                    <ul class="text-3xl md:text-7xl font-bold pl-4">
+                        <li class="cursor-pointer hover:text-red-700">Expertise</li>
+                        <li class="cursor-pointer hover:text-red-700">Work</li>
+                        <li class="cursor-pointer hover:text-red-700">About</li>
+                        <li class="cursor-pointer hover:text-red-700">Careers</li>
+                        <li class="cursor-pointer hover:text-red-700">Blog</li>
+                        <li class="cursor-pointer hover:text-red-700">Contact</li>
+                    </ul>
+                    <div class="social-icon text-[24px] flex flex-row gap-10 pt-10 pl-4">
+
+
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="right-navslide w-full md:w-1/2 md:translate-x-[40%] flex flex-col gap-5">
+
+                    <img src="./images/nav/1.webp" alt="">
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="hero" class="hero bg-body overflow-hidden md:pb-[70vh]  lg:pb-[75vh]  px-[15px] lg:PX-[0px]">
+        <div class="hero container mx-auto relative">
+            <div id="hero-text" class="hero-text flex justify-between items-start">
+                <h1 id="hero-text" class="py-[50px] lg:py-[120px] font-bold">
+                    <span class="text-[54px] lg:text-[114px] font-bold leading-[1.2em] lg:leading-[1.1em]">Designing
+                        and</span> <br>
+                    <span class="text-[54px] lg:text-[114px] font-bold leading-[1.2em] lg:leading-[1.1em]">building
+                        digital</span>
+                    <br> <span
+                        class="text-[54px] lg:text-[114px] font-bold leading-[1.2em] lg:leading-[1.1em]">solutions
+                        since</span> <br>
+                    <span class="text-[54px] lg:text-[114px] font-bold leading-[1.2em] lg:leading-[1.1em]">2005</span>
+                </h1>
+
+
+
+
+
+
+            </div>
+
+
+
+
+            <div class="hero-rating flex flex-col md:flex-row justify-between gap-10 lg:gap-0 items-start py-10 ">
+
+                <p class="font-medium ">Your trusted partner in solving <br> complex problem with technology</p>
+
+
+
+
+
+                <div id="video"
+                    class="video relative container mx-auto overflow-hidden flex flex-col justify-center items-center">
+                    <video class="w-[500px] " pause loop muted src="./images/video/Showreel-poster-16-9.mp4"></video>
+
+
+                    <div id="main-cursor" class=" container mx-auto">
+                        <div id="videocursor"
+                            class="cursor absolute top-0 left-0   h-[60px] w-[60px] bg-red-600 rounded-full flex justify-center items-center">
+
+                            <h1 class="text-[10px] text-center text-white">Let's play</h1>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="flex flex-col items-start gap-5 ">
+                    <p class="font-medium">The ratings are in – our clients love <br> working with us. </p>
+                    <button
+                        class="bg-white hover:bg-black hover:text-white flex justify-between gap-1 rounded-full py-3 px-7">
+                        <img src="./images/logo/image (1).svg" alt="">
+                        <i class="fa-solid fa-star text-button"></i>
+                        <i class="fa-solid fa-star text-button"></i>
+                        <i class="fa-solid fa-star text-button"></i>
+                        <i class="fa-solid fa-star text-button"></i>
+                        <p>4.8</p>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section id="area" class="area  bg-body">
+
+        <div class="container mx-auto lg:pb-[120px] pb-[50px] ">
+
+
+
+            <div id="video-below"
+                class="video-below py-[50px] lg:py-[120px] px-[15px] lg:PX-[0px] flex flex-col md:flex-row justify-between items-start lg:pt-[80px] lg:pb-[120px] border-b-[1 border-gray-300 gap-10 md:gap-0">
+                <div class="video-below-text w-full lg:w-1/3">
+                    <h1 class="text-2xl font-bold">
+                        Strategically located within your reach, we’ll take your ambitious project from an
+                        intriguing
+                        idea
+                        to a smashing success.
+                    </h1>
+                </div>
+                <div class="video-counter flex flex-col md:flex-row justify-between items-center gap-5 lg:gap-15">
+                    <div class="office">
+                        <p class="font-medium">OFFICES WORLDWIDE</p>
+                        <h1 class="text-5xl lg:text-8xl font-bold pt-5">8</h1>
+                    </div>
+
+                    <div class="tech">
+                        <p class="font-medium">TECH PROFESSIONALS</p>
+                        <h1 class="text-5xl lg:text-8xl font-bold pt-5">370+</h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div
+                class="area flex flex-col gap-15 lg:gap-0 md:flex-row justify-between items-start  border-gray-400 border-t pt-[50px] md:pt-[120px] px-[15px] lg:PX-[0px]">
+                <div class="left-area w-full lg:w-1/3">
+                    <h1 class="font-medium">AREA OF EXPERTISE</h1>
+                    <P class="font-medium pt-5 leading-[1.6em]">Improve your processes, serve more customers, and
+                        achieve
+                        your
+                        goals with
+                        our
+                        expertise in designing
+                        and building digital solutions.</P>
+                </div>
+                <div class="right-area w-full lg:w-1/2 pd-[0] md:px-[15px]">
+
+                    <ul class="flex flex-col gap-5">
+                        <li
+                            class="flex justify-between cursor-pointer items-start gap-5 md:gap-10 pb-5 border-b border-gray-300 hover:">
+                            <h1 class="text-[24px] lg:text-4xl font-bold ">Product Strategy and Design</h1>
+                            <i
+                                class="fa-solid fa-arrow-right transition-all hover:pr-3  bg-black text-white p-3 rounded-full"></i>
+                        </li>
+
+
+                        <li
+                            class="flex justify-between cursor-pointer  items-center gap-15 pb-5 border-b border-gray-300">
+                            <h1 class="text-[24px] lg:text-4xl font-bold ">Mobile and Web Apps</h1>
+                            <i class="fa-solid fa-arrow-right bg-black transition-all text-white p-3 rounded-full"></i>
+                        </li>
+
+
+                        <li
+                            class="flex justify-between cursor-pointer  items-center gap-15 pb-5 border-b border-gray-300">
+                            <h1 class="text-[24px] lg:text-4xl font-bold">Custom IoT Solutions</h1>
+                            <i class="fa-solid fa-arrow-right bg-black transition-all text-white p-3 rounded-full"></i>
+                        </li>
+
+
+                        <li
+                            class="flex justify-between cursor-pointer  items-center gap-15 pb-5 border-b border-gray-300">
+                            <h1 class="text-[24px] lg:text-4xl font-bold">Enterprise Platforms</h1>
+                            <i class="fa-solid fa-arrow-right transition-all bg-black text-white p-3 rounded-full"></i>
+                        </li>
+
+
+                        <li
+                            class="flex justify-between cursor-pointer  items-center gap-15 pb-5 border-b border-gray-300">
+                            <h1 class="text-[24px] lg:text-4xl font-bold">Cybersecurity</h1>
+                            <i class="fa-solid fa-arrow-right transition-all bg-black text-white p-3 rounded-full"></i>
+                        </li>
+
+
+                        <li
+                            class="flex justify-between cursor-pointer  items-center gap-15 pb-5 border-b border-gray-300">
+                            <h1 class="text-[24px] lg:text-4xl font-bold">AI Buisness Solutoins</h1>
+                            <i class="fa-solid fa-arrow-right transition-all bg-black text-white p-3 rounded-full"></i>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <section id="recent-work" class="bg-white overflow-hidden">
+        <div class="recent-work container mx-auto pt-[50px] px-[15px] lg:pt-[120px]">
+            <div class="recent-head flex justify-between items-center mb-[30px]">
+
+                <p>RECENT WORK</p>
+                <button>Explore more
+                    <i class="fa-solid fa-arrow-right "></i>
+                </button>
+
+            </div>
+
+            <div class="main-work-box grid grid-cols-1 md:grid-cols-2 gride-rows-2 gap-7 md:gap-20">
+                <div class="work-box">
+
+                    <div class="work-box-image">
+
+                        <img src="./images/work/1.webp" alt="">
+
+                    </div>
+
+
+                    <h1 class="underline-hover text-[24px]  lg:text-3xl font-bold my-7">Cutting energy costs by 75% with
+                        Philips
+                        MasterConnect smart
+                        lighting
+                    </h1>
+                    <p class="text-[14px] lg:text-xl font-semi-bold">A conveniently sustainable IoT app pushing the
+                        boundaries of
+                        lighting
+                        technology.
+                    </p>
+                </div>
+
+                <div class="work-box">
+                    <div class="work-box-image">
+
+                        <img src="./images/work/2.webp" alt="">
+
+                    </div>
+                    <h1 class="underline-hover text-[24px] lg:text-3xl font-bold my-7">Cutting energy costs by 75% with
+                        Philips
+                        MasterConnect smart
+                        lighting
+                    </h1>
+                    <p class="text-[14px] lg:text-xl font-semi-bold">A conveniently sustainable IoT app pushing the
+                        boundaries of
+                        lighting technology.</p>
+                </div>
+
+
+                <div class="work-box">
+                    <div class="work-box-image">
+
+                        <img src="./images/work/3.webp" alt="">
+
+                    </div>
+                    <h1 class="underline-hover text-[24px] lg:text-3xl font-bold 
+                    my-7">Cutting energy costs by 75% with
+                        Philips
+                        MasterConnect smart
+                        lighting
+                    </h1>
+                    <p class="text-[14px] lg:text-xl font-semi-bold">A conveniently sustainable IoT app pushing the
+                        boundaries of
+                        lighting technology.</p>
+                </div>
+
+
+                <div class="work-box">
+                    <div class="work-box-image">
+
+                        <img src="./images/work/4.webp" alt="">
+
+                    </div>
+                    <h1 class="underline-hover text-[24px] lg:text-3xl font-bold my-7">Cutting energy costs by 75% with
+                        Philips
+                        MasterConnect smart
+                        lighting
+                    </h1>
+                    <p class="text-[14px] lg:text-xl font-semi-bold">A conveniently sustainable IoT app pushing the
+                        boundaries of
+                        lighting technology.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="trustworthy" class="bg-white">
+        <div
+            class="trustworthy container mx-auto flex flex-col md:flex-row justify-between items-start pt-[60px] md:pt-[120px] pb-[60px] px-[15px] lg:px-[0px]">
+            <div class="left-trustworthy w-full lg:w-1/2">
+                <p class="font-medium">IN GOOD COMPANY</p>
+            </div>
+            <div class="right-trustworthy pl-0 lg:pl-10 w-full lg:w-1/2">
+                <h1 class="font-bold text-[42px] lg:text-[75px]">Trustworthy</h1>
+                <p class="font-medium w-full md:w-1/2">For 20 years, our experts have helped iconic companies bring
+                    exciting
+                    new
+                    products to market fast.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="image-carousel" class="bg-white">
+        <div class="image-carousel  overflow-hidden">
+
+
+            <div id="move" class=" flex gap-30">
+
+
+                <div class="marque">
+                    <img src="./images/company/img-citi-bank.svg" alt="">
+                </div>
+
+
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-samsung.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-citi-bank.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+            </div>
+
+            <div id="lowmove" class=" flex gap-30">
+
+
+
+
+
+
+
+                <div class="marque">
+                    <img src="./images/company/img-bayer.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-citi-bank.svg" alt="">
+                </div>
+
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+
+                <div class="marque">
+                    <img src="./images/company/img-citi-bank.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-vns-health.svg" alt="">
+                </div>
+
+                <div class="marque">
+                    <img src="./images/company/img-bayer.svg" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="news" class="px-[15px] bg-white">
+
+        <div class="news container mx-auto">
+            <div
+                class="news-head flex justify-between items-center md:py-0 py-[30px] pt-[50px] lg:pt-[120px] mb-[20px] lg:mb-[30px]">
+                <h1>NEWS</h1>
+                <button class="text-red-500">
+                    View all
+                    <i class="fa-solid fa-arrow-right text-red-500"></i>
+                </button>
+            </div>
+
+            <div class="main-news-box">
+
+                <div
+                    class="news-box flex flex-col md:flex-row justify-between items-end md:items-start gap-3 md:gap-10 pb-[30px]">
+
+                    <div class="news-image">
+                        <img class="h-[200px] w-[500px]" src="./images/news/1.webp" alt="">
+                    </div>
+                    <div class="news-title flex flex-col justify-between items-start gap-4 md:gap-15">
+                        <h1 class="underline-hover text-[24px] lg:text-[36px] font-extrabold leading-[0.9em]">
+                            Skopje
+                            Calling:
+                            Infinum is
+                            hiring a Head
+                        </h1>
+                        <button class="bg-black text-white py-2 px-5 rounded-full hover:bg-red-800">News</button>
+                    </div>
+                    <div class="news-arrow">
+                        <i class="fa-solid fa-arrow-right bg-black text-white p-3 rounded-full transition-all"></i>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="news-box flex flex-col md:flex-row justify-between items-end md:items-start md:gap-10 gap-3 pb-[30px]">
+
+                    <div class="news-image">
+                        <img class="h-[200px] w-[500px]" src="./images/news/2.webp" alt="">
+                    </div>
+                    <div class="news-title flex flex-col justify-between items-start gap-5 md:gap-15">
+                        <h1 class="underline-hover text-[24px] lg:text-[36px] font-extrabold leading-[1.2em]">Skopje
+                            Calling:
+                            Infinum is
+                            hiring a Head
+                        </h1>
+                        <button class="bg-black text-white py-2 px-5 rounded-full hover:bg-red-800">News</button>
+                    </div>
+                    <div class=" news-arrow">
+                        <i class="fa-solid fa-arrow-right transition-all bg-black text-white p-3 rounded-full"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="blog" class="bg-white pt-[50px] lg:pt-[120px] pb-[50px] lg:pb-[80px] px-[15px] ">
+        <div class="blog container mx-auto flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-10">
+
+            <div class="main-blog-box relative bg-body  w-full lg:w-1/3">
+                <div class="blog-box p-[40px]">
+                    <p>SECOPS & PENTESTING</p>
+                    <h1 class="text-[22px] lg:text-[32px] font-extrabold leading-[1.2em] py-7">Penetration testing
+                        for
+                        your web app
+                    </h1>
+                    <p class="opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ab quia
+                        modi
+                        qui eligendi inventore?</p>
+                </div>
+                <div class="blog-box-image">
+                    <img src="./images/blog/1.webp" alt="">
+                </div>
+                <button
+                    class="bg-black absolute hover:bg-red-600 bottom-30 opacity-0 left-10 text-white py-4 px-7 rounded-full">Load
+                    More</button>
+            </div>
+
+
+            <div class="main-blog-box relative bg-body w-full lg:w-1/3">
+                <div class="blog-box p-[40px]">
+                    <p>SECOPS & PENTESTING</p>
+                    <h1 class="text-[24px] lg:text-[32px] font-extrabold leading-[1.2em] py-7">Penetration testing
+                        for
+                        your web app
+                    </h1>
+                    <p class="opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ab quia
+                        modi
+                        qui eligendi inventore?</p>
+                </div>
+                <div class="blog-box-image">
+                    <img src="./images/blog/2.webp" alt="">
+                </div>
+                <button
+                    class="bg-black absolute  hover:bg-red-600 bottom-30 opacity-0 left-10 text-white py-4 px-7 rounded-full">Load
+                    More</button>
+            </div>
+
+
+
+            <div class="main-blog-box relative bg-body w-full lg:w-1/3">
+                <div class="blog-box p-[40px]">
+                    <p>SECOPS & PENTESTING</p>
+                    <h1 class="text-[24px] lg:text-[32px] font-extrabold leading-[1.2em] py-7">Penetration testing
+                        for
+                        your web app
+                    </h1>
+                    <p class="opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ab quia
+                        modi
+                        qui eligendi inventore?</p>
+                </div>
+                <div class="blog-box-image">
+                    <img src="./images/blog/3.webp" alt="">
+                </div>
+                <button
+                    class="bg-black absolute  hover:bg-red-600 bottom-30 opacity-0 left-10 text-white py-4 px-7 rounded-full">Load
+                    More</button>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section id="Digital-journey" class="bg-white cursor-pointer">
+        <div class="Digital-journey container mx-auto flex justify-center items-center ">
+
+            <div id="digitalProperty"
+                class="digital-property container mx-auto h-[20vh] md:h-[50vh] w-full flex flex-col justify-center items-center">
+
+
+                <div id="main-cursor" class="relative container mx-auto">
+                    <div id="cursor"
+                        class="cursor absolute top-0 left-0 h-[50px] w-[50px]  md:h-[100px] md:w-[100px] bg-red-600 rounded-full flex justify-center items-center">
+
+                        <h1 class="text-center text-white text-[10px] md:text-[22px]">Let's talk</h1>
+
+                    </div>
+                </div>
+
+                <h1 id="digitalPropertyText" class=" text-[42px] md:text-[96px] font-bold text-center leading-[1.2em]">
+                    Start your <br> digital
+                    journey </h1>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="connect" class="bg-white px-[15px] lg:px-[0px]">
+
+        <div
+            class="connect container  mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start py-10 border-t-[1px] border-b border-gray-400 pt-[50px] lg:pt-[110px] lg:pb-[95px] pb-[50px] px-[20px]">
+            <div class="left-connect py-10 md-py-0 w-full md:w-1/4">
+
+                <h1 class="text-[24px] font-bold leading-[1.2em]">Tech stories you won't read anywhere else
+                </h1>
+
+                <div class="input-email mt-7 border-b-[1px] border-gray-400 flex justify-between items-center">
+
+                    <input type=" email" placeholder="Your email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+            <div
+                class="right-connect w-full md:w-1/2 py-10 md:py-0 flex flex-col md:flex-row md:justify-between md:items-baseline  gap-10 lg:gap-30">
+
+                <div class="infinum-box">
+                    <ul class="flex flex-col">
+                        <li class="text-[16px] ">INFINUM</li>
+                        <li class="text-[24px] underline-hover font-bold text-start ">Work</li>
+                        <li class="text-[24px] underline-hover font-bold text-start ">About</li>
+                        <li class="text-[24px] underline-hover font-bold text-start ">Blog</li>
+                        <li class="text-[24px] underline-hover font-bold text-start ">Careers</li>
+                        <li class="text-[24px] underline-hover font-bold text-start ">Contact</li>
+                    </ul>
+                </div>
+
+                <div class="more-box">
+                    <ul class="flex flex-col">
+                        <li class="text-[16px]">MORE</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Ventures</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Events</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Delivered
+                        </li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Handbook</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Academy</li>
+                        <li class="text-[24px] font-bold text-start underline-hover">Foundation</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="social-box">
+                    <ul class="flex flex-col gap-0">
+                        <li class="text-[16px]">SOCIAL</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Facebook</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Instagram</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Clutch</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">Dribbble</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">LinkedIn</li>
+                        <li class="text-[24px] underline-hover font-bold text-start">X</li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section id="footer" class="bg-white py-[30px] md:py-10 px-[15px] lg:px-[0px]">
+        <div
+            class="footer container mx-auto flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start py-[0px] md:py-[20px] gap-3 md:gap-10 lg:gap-0">
+            <div class="">
+                <img src="./images/logo/foooter Screenshot 2025-05-18 020347.png" alt="">
+            </div>
+            <div class="footer-item">
+                <ul class="flex flex-col justify-center items-center md:items-start">
+
+                    <li class="underline-hover">Code of Conduct</li>
+                    <li class="underline-hover">Privacy Policy</li>
+                    <li class="underline-hover">Legal Information</li>
+                    <li class="underline-hover">Social and environmental policy</li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 Infinum. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.7/scrollmagic.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js""></script>
+
+<script src=" ./jquery/jquery.js"></script>
+<script src="./index.js"></script>
+
+
+
+</html>

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+
+@theme{
+    --color-body: #e4ebf5;
+    --color-button: #d8262c;
+    --font-display: "Arial", "sans-serif"; 
+}
+

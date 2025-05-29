@@ -1,0 +1,216 @@
+
+/* #navbar:hover .three-button{
+    top: 50%;
+    transition: all 0.7s ease-in;
+
+     npx @tailwindcss/cli -i ./css/input.css -o ./css/output.css --watch 
+
+} */
+
+
+.underline-hover {
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: #333;
+}
+
+.underline-hover::after{
+
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.4s ease-in-out;
+}
+
+.underline-hover:hover::after {
+    width: 100%;
+}
+
+.overline-hover {
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: #333;
+}
+
+.overline-hover::after{
+
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 220%;
+    width: 0;
+    height: 5px;
+
+    border-radius: 2px;
+    background-color: rgb(224, 27, 27);
+    transition: width 0.4s ease-in-out;
+}
+
+.overline-hover:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+#three_button {
+
+    
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+
+.right-navslide img{
+    width: 100%;
+}
+
+
+/* .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            
+        }
+        
+.close-btn {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding: 4px;
+        } */
+
+
+
+.right-area ul li:hover h1 {
+
+    font-size: 38px;
+    transition: all 0.3s ease-in;
+}
+
+.right-area ul li:hover i {
+
+   background-color: crimson;
+   margin-right: 15px;
+}
+
+.work-box-image{
+
+    overflow: hidden;
+}
+
+.work-box:hover img{
+    scale: 1.06;
+    transition: all 0.3s ease-in;
+}
+
+/* .work-box:hover h1{
+    text-decoration: underline;
+    
+} */
+
+.marque img{
+    
+    width: 100%;
+    height: auto;
+}
+
+
+.news-image{
+    overflow: hidden;
+}
+.news-box:hover img{
+    scale: 1.06;
+    transition: all 0.3s ease-in;
+}
+
+
+.news-box:hover i{
+
+    background-color: rgb(231, 11, 55);
+    margin-right: 15px;
+
+}
+
+.main-blog-box:hover img{
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.main-blog-box:hover p{
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.main-blog-box:hover button{
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+
+.right-connect li:hover{
+    cursor: pointer;
+   
+}
+
+.right-connect li:first-child{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.right-connect li{
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+    #header{
+        display: none;
+    }
+
+    .right-navslide{
+        display: none;
+    }
+
+    
+}
